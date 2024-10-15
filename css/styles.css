@@ -125,10 +125,15 @@ a{
     margin-top: -10%;
     font-family: "Mitr", sans-serif;
     font-size: 50px;
-    color: #798645;
-    font-weight: bold;
+    color: #032221;
+    font-weight: 500;
+    
    }
-   /* Forma de alinear verticalmente */
+}
+@media (max-width:900px ) {
+    h2{
+margin-left:20%;
+    }    
 }
 .boton{
     background-color: #2FA98C;
@@ -157,7 +162,62 @@ a{
 .sobre-fernando{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    margin: 0;
+}
+.texto-sobre-fernando{
+    grid-column: 1/3;
 }
 
-
-
+/* SobreMi */
+@media (min-width: 768px) {
+    .sobre-mi{
+      display: grid;
+     grid-template-columns: repeat(2,1fr);
+     column-gap: 2rem;
+    }
+}
+@media (min-width: 468px) {
+    .sobremi__foto{
+      height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    }
+}
+/* .contenedornuevo {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+    background-color: #C4E4FF;
+    border-radius: 2rem;
+    padding-bottom: 3rem;
+  } */
+  img {
+    width: 100%;
+  }
+  .texto-sobremi{
+    padding: 3rem;
+  }
+  .sobre-mi__texto{
+    text-align: justify;
+    padding: 2rem;
+  }
+  .sobremi__foto{
+    height: 30rem;
+    width: 30rem;
+    border-radius: 50%;
+  }
+  .sobremi__imagen{
+    text-align: center;
+  }
+  .a__redes-sociales {
+    width: 100%;
+    height: 100%;
+    font-size: 1.5em;
+    background: transparent;
+    color: var(--clr);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+    animation: icon-out .5s forwards;
+    animation-timing-function: cubic-bezier(0.5, -0.6, 1, 1);
+  }
