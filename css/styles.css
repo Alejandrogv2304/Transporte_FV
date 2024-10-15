@@ -26,7 +26,7 @@ a{
         padding: 8px 8px;
         font-family: "Afacad Flux", sans-serif;
         font-weight: 600;
-        font-size: 20px;
+        font-size: 25px;
         color: white;
         margin-left: 50px;
     }
@@ -36,7 +36,7 @@ a{
     border-radius: 22px;
 }
 .navegacion-principal h1{
-    color: white;
+    color: #EE4449;
     font-family: "Mitr", sans-serif;
     margin-right: auto;
     margin-left: 50px;
@@ -230,6 +230,7 @@ margin-left:20%;
     height: 40rem;
     width: 40rem;
     border-radius: 50%;
+    object-fit: cover;
   }
   .sobremi__imagen{
     text-align: center;
@@ -243,25 +244,30 @@ margin-left:20%;
     .sobre-mi-boton{
         margin-top: 2rem;
     }
-    .b3{
+    /* .b3{
         margin-left: 1rem;
-    }
+    } */
       
   }
   .sobre-mi-boton{
     border-radius: 1rem;
     font-size: 2rem;
-    margin-right: 3rem;
+    /* margin-right: 3rem; */
     font-family: "Afacad Flux", sans-serif;
     border: 1.7px solid black;
+    transition: box-shadow ease 0.3s;
+   min-width: 25%;
+   min-height: 25%;
+   margin-bottom: 10px;
   }
   .sobre-mi-boton:hover{
     cursor: pointer;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+
   }
   .b1{
   background-color: #b9f1d6;
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
   }
   .b2{
     background-color: #ff3d00;
@@ -275,8 +281,29 @@ margin-left:20%;
   .b5{
     background-color: #66B2A3;
   }
+  @media (max-width:700px ) {
+    .botones-sobre-fernando{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: center;
+    }    
+  }
+  .botones-sobre-fernando{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px;
+  }
+
 
   /* Slider */
+  .lugares{
+    justify-content: center;
+  }
   .slider{
     aspect-ratio: 10/16;
     width: 300px;
@@ -292,3 +319,4 @@ margin-left:20%;
     border-radius: 5px;
     scroll-snap-align: center;
   }
+
