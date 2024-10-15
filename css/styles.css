@@ -1,0 +1,39 @@
+a{
+    text-decoration: none;
+}
+.contenedor{
+    max-width: 120rem;
+    /* Toma como maximo 1200 pixeles, nos sirve para responsive */
+    margin:0 auto;
+}
+.nav-bg{
+    background-color: #032221;
+    
+}
+.navegacion-principal{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 15px;
+    margin-right: 65px;
+    a{
+        padding: 8px 8px;
+        font-family: "Afacad Flux", sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        color: white;
+        margin-left: 50px;
+    }
+}
+.navegacion-principal a:hover{
+    background-color: #2CC295;
+    border-radius: 22px;
+}
+.navegacion-principal h1{
+    color: white;
+    font-family: "Mitr", sans-serif;
+    margin-right: auto;
+    margin-left: 50px;
+    font-size: 29px ;
+}
+
