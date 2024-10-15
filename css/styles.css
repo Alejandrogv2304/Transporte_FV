@@ -36,4 +36,63 @@ a{
     margin-left: 50px;
     font-size: 29px ;
 }
+/* Responsive Navbar */
+@media (max-width: 800px) {
+    .navegacion-principal{
+        flex-direction: column;
+       margin-right: 0px;
+    }
+    .navegacion-principal h1{
+        margin-left: 35%;
+    }
+    
+}
+
+/* Section Hero */
+.hero{
+    background-image: url('../Images/banner_trasnportefv.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+    height: 110vh; /* Ocupará toda la altura de la ventana */
+    width: 100%; 
+    display: flex; /* Opcional: para centrar contenido */
+    align-items: center; /* Opcional: centrar verticalmente */
+    justify-content: center;
+    margin: 0;
+    h2{
+        margin-top: -24%;
+        margin-left: -30%;
+        font-family: "Mitr", sans-serif;
+        font-size: 50px;
+        color: #001F3F;
+        font-weight: 500;
+        
+    }
+    
+}
+@media (min-width: 1100px) {
+    .span-titulo{
+        color: #4F75FF;
+    } 
+}
+
+@media (max-width: 1300px) {
+    .hero {
+        h2{
+        font-weight: 400;
+        margin-left:0px;
+        margin-top: -80%;
+        text-align: center;
+         color: #001F3F; 
+         transition: transform 0.3s, #001F3F 0.3s; 
+        }
+    }
+    h2:hover {
+        transform: scale(1.15); /* Aumenta el tamaño al pasar el ratón */
+        color: #001F3F; /* Cambia el color al pasar el ratón */
+    }
+    
+}
 
