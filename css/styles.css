@@ -46,26 +46,26 @@ a{
 @media (max-width: 800px) {
     .navegacion-principal{
         flex-direction: column;
-       margin-right: 0px;
+       margin-right: auto;
     }
     .navegacion-principal h1{
-        margin-left: 35%;
+        margin-left: auto;
      
     }
     
 }
 
 /* Section Hero */
-.hero{
+/* .hero{
     background-image: url('../Images/banner_trasnportefv.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
    
-    height: 110vh; /* Ocupará toda la altura de la ventana */
+    height: 110vh; 
     width: 100%; 
-    display: flex; /* Opcional: para centrar contenido */
-    align-items: center; /* Opcional: centrar verticalmente */
+    display: flex; 
+    align-items: center; 
     justify-content: center;
     margin: 0;
     h2{
@@ -98,10 +98,66 @@ a{
         }
     }
     h2:hover {
-        transform: scale(1.15); /* Aumenta el tamaño al pasar el ratón */
-        color: #001F3F; /* Cambia el color al pasar el ratón */
+        transform: scale(1.15); 
+        color: #001F3F;
     }
     
+} */
+/* Hero */
+.hero{
+    background-image: url(../Images/banner_transporte_fv.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 610px;
+    position: relative;
+    margin-bottom: 2rem;
+}   
+.contenido-hero{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   h2{
+    margin-top: -10%;
+    font-family: "Mitr", sans-serif;
+    font-size: 50px;
+    color: #798645;
+    font-weight: bold;
+   }
+   /* Forma de alinear verticalmente */
 }
+.boton{
+    background-color: #2FA98C;
+    color:white;
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+}
+@media (min-width: 768px) {
+    .boton{
+        width: auto;
+    }
+}
+.boton:hover{
+    cursor: pointer;
+    background-color: #00DF81;
+}
+
+.sobre-fernando{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
 
 
