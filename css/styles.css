@@ -1,11 +1,17 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+    /* Esta linea junto con la box-sizing hace que el padding y
+    a no afecte a los tamaños establecidos, es decir
+    que se puedan aplicar sin modificar el tamaño */
+}
 a{
     text-decoration: none;
 }
-.contenedor{
-    max-width: 120rem;
-    /* Toma como maximo 1200 pixeles, nos sirve para responsive */
-    margin:0 auto;
-}
+
 .nav-bg{
     background-color: #032221;
     
@@ -44,6 +50,7 @@ a{
     }
     .navegacion-principal h1{
         margin-left: 35%;
+     
     }
     
 }
@@ -67,14 +74,15 @@ a{
         font-family: "Mitr", sans-serif;
         font-size: 50px;
         color: #001F3F;
-        font-weight: 500;
+        font-weight: bold;
         
     }
     
 }
 @media (min-width: 1100px) {
     .span-titulo{
-        color: #4F75FF;
+        color: white;
+        font-weight: bold;
     } 
 }
 
@@ -95,4 +103,5 @@ a{
     }
     
 }
+
 
