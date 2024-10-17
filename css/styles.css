@@ -20,23 +20,26 @@ a{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 15px 15px;
+    min-height: 90px;
+    /* padding: 15px 15px; */
     margin-right: 65px;
     a{
-        padding: 8px 8px;
+        padding: 1rem;
         font-family: "Afacad Flux", sans-serif;
         font-weight: 600;
         font-size: 25px;
-        color: white;
+        color: #F1F7F6;
         margin-left: 50px;
     }
 }
 .navegacion-principal a:hover{
     background-color: #2CC295;
-    border-radius: 22px;
+    
+    
+    
 }
 .navegacion-principal h1{
-    color: #EE4449;
+    color: #F1F7F6;
     font-family: "Mitr", sans-serif;
     margin-right: auto;
     margin-left: 50px;
@@ -130,6 +133,11 @@ a{
     
    }
 }
+.contenido-hero a{
+  font-family:"Mitr", sans-serif ;
+  font-weight: 600;
+  font-size: 3rem;
+}
 @media (max-width:900px ) {
     h2{
 margin-left:20%;
@@ -204,7 +212,7 @@ margin-left:20%;
     h2{
         margin: 0;
         font-family: "Afacad Flux", sans-serif;
-        font-size: 4rem;
+        font-size: 6rem;
         font-weight: 700;
         color: #064F4B;
     }
@@ -259,6 +267,7 @@ margin-left:20%;
    min-width: 25%;
    min-height: 25%;
    margin-bottom: 10px;
+   margin-right: 20px;
   }
   .sobre-mi-boton:hover{
     cursor: pointer;
@@ -270,16 +279,19 @@ margin-left:20%;
   /* margin-left: 1rem; */
   }
   .b2{
-    background-color: #ff3d00;
+    background-color: #0a837f;
   }
   .b3{
-    background-color: #ffbc11;
+    background-color: #b9f1d6;
   }
   .b4{
     background-color: #0a837f;
   }
   .b5{
-    background-color: #66B2A3;
+    background-color: #b9f1d6;
+  }
+  .b6{
+    background-color: #0a837f;
   }
   @media (max-width:700px ) {
     .botones-sobre-fernando{
@@ -289,15 +301,19 @@ margin-left:20%;
       align-content: center;
     }    
   }
-  .botones-sobre-fernando{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 10px;
+  @media (min-width: 700px) {
+    .botones-sobre-fernando{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 10px;
+      
+    }
   }
+ 
 
 
   /* Slider */
@@ -316,7 +332,51 @@ margin-left:20%;
     left:0;
     position: sticky;
     object-fit: cover;
+    height: 150px;
+    width: 300px;
     border-radius: 5px;
     scroll-snap-align: center;
   }
+
+  .slider-frame {
+    width: 500px;
+    height: 500px;
+    margin:50px auto 0;
+    overflow: hidden;
+  }
+  
+  
+  .slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    
+    animation: slide 20s infinite alternate ease-in-out;
+  }
+  
+  .slider-frame li {
+    width: 100%;
+    list-style: none;
+  }
+  
+  .slider-frame img{
+    height: 400px;
+    width: 400px;
+  }
+  
+   @keyframes slide {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+  } 
+
+
 
